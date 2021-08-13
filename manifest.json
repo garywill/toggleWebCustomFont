@@ -1,20 +1,15 @@
 {
     "manifest_version": 2,
     "name": "Toggle web custom font",
-    "version": "1.0",
+    "version": "1.2",
     "description": "A toolbar button to toggle disabling web custom font (browser.display.use_document_fonts). Disabling it resists font fingerprint.",
-    "homepage_url": "https://github.com/garywill/toggleWebCustomFont",
+    "homepage_url": "https://garywill.github.io",
     "icons": {
-        "96": "icon.svg"
+        "128": "icon.svg"
     },
     "developer": {
         "name": "Garywill",
-        "url": "https://github.com/garywill"
-    },
-    "applications": {
-        "gecko": {
-            "strict_min_version": "63.0"
-        }
+        "url": "https://github.com/garywill/toggleWebCustomFont"
     },
     "permissions": [
         "browserSettings"
@@ -25,7 +20,12 @@
         ]
     },
     "browser_action": {
-        "default_icon": "icon.svg",
+        "default_icon": "icon_btn.svg",
         "default_title": "Resist font fingerprint by disabling web custom font"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "{75d0437e-4f74-4d80-bf07-fc27c04ad3fd}"
+        }
     }
 }
